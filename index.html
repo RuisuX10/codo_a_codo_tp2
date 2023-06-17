@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>TP integrador</title>
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="container-fluid navbar">    
+        <div class="nav-left">
+            <div class="nav-img">
+                <img src="img/codoacodo.png" alt="codo a codo" id="imagen-codoacodo">
+            </div>
+            <div class="texto-nav">
+                <h3>Conf Bs As</h3>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-right-options">
+                <a href="#" class="nav-right-options-op-select">La conferencia</a>
+                <a href="#oradores" class="nav-right-options-op">Los oradores</a>
+                <a href="#lugar" class="nav-right-options-op">EL lugar y la fecha</a>
+                <a href="#formulario" class="nav-right-options-op">Conviertete en orador</a>
+                <a href="#" class="nav-right-options-op-succes">Compra Tickets</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Comprar tickets -->
+    <div class="container">
+        <div class="cuadros">
+            <div class="cuadro">
+                <h5 class="texto-cuadro">Estudiante</h5>
+                <p class="texto-cuadro">Tienen descuento</p>
+                <p class="texto-cuadro negrita">80%</p>
+                <p class="texto-cuadro info">*presentar documentacion</p>
+            </div>
+            <div class="cuadro cuadro-2">
+                <h5 class="texto-cuadro">Trainee</h5>
+                <p class="texto-cuadro">Tienen descuento</p>
+                <p class="texto-cuadro negrita">50%</p>
+                <p class="texto-cuadro info">*presentar documentacion</p>
+            </div>
+            <div class="cuadro cuadro-3">
+                <h5 class="texto-cuadro ">Junior</h5>
+                <p class="texto-cuadro">Tienen descuento</p>
+                <p class="texto-cuadro negrita">15%</p>
+                <p class="texto-cuadro info">*presentar documentacion</p>
+            </div>
+        </div>
+        <p class="texto-cuadro">VENTA</p>
+        <h2 class="texto-cuadro">VALOR DE TICKET $200</h2>
+        <form action="" class="container">
+            <div class="form-nombre-apellido">
+                <input type="text" class="form-control" placeholder="Nombre">
+                <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+            <div class="div-correo">
+                <input type="text" class="form-control" placeholder="Correo">
+            </div>
+            <div class="cant-cat">
+                <div class="form-group col-12 col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="cant" min="1" pattern="^[0-9]+">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">Categoria</label>
+                    <select name="" id="categoria" class="form-control">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <div class="form-row container">
+            <div class="form-group col">
+                <div class="alert alert-primary">
+                    Total a Pagar: $<span id="aPagar"></span>
+                </div>
+            </div>
+            <div class="form-group container row">
+                <button class="btn btn-warning col-md-6" id="btn-borrar">Borrar</button>
+                <button class="btn btn-success col-md-6" id="btn-resumen">Resumen</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="d-flex justify-content-evenly py-4">
+        <div><a href="#" class="footer-link">Preguntas <br> frecuentes</a></div>
+        <div><a href="#" class="footer-link">Contactanos</a></div>
+        <div><a href="#" class="footer-link">Prensa</a></div>
+        <div><a href="#" class="footer-link">Conferencias</a></div>
+        <div><a href="#" class="footer-link">Terminos y <br>condiciones</a></div>
+        <div><a href="#" class="footer-link">Privacidad</a></div>
+        <div><a href="#" class="footer-link">Estudiantes</a></div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>

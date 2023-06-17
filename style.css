@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.border {
+    border: 0.5px solid red;
+}
+/*-------------- NAV ------------------ */
+nav {
+    display: flex;
+    background-color: #353a40;
+    color: aliceblue;
+    justify-content: space-around;
+}
+
+.nav-left {
+    display: flex;
+    padding-left: 50px;
+}
+
+#imagen-codoacodo {
+    width: 150px;
+}
+
+.texto-nav {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.nav-right-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-right-options-op {
+    color: #939ea4;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+.nav-right-options-op-select {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: large;
+}
+
+.nav-right-options-op:hover {
+    color: aliceblue;
+}
+
+.nav-right-options-op-succes {
+    color: #3f9a55;
+    text-decoration: none;
+}
+
+.nav-right-options-op-succes:hover {
+    color: #29a744;
+}
+
+/* --------- HERO -------------- */
+
+.hero {
+    width: 100%;
+    height: 1080px;
+    background-image: url('img/ba1-2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 500px;
+}
+
+.hero-tittle {
+    color: aliceblue;
+    filter: brightness(1.5);
+}
+
+#hero-text {
+    color: aliceblue;
+}
+
+#ignite {
+    border-bottom: 1px dotted #101010;
+
+}
+
+footer {
+    background-color: #1e5170;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Comprar tickets */
+        /* CUADROS */
+.cuadros {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.cuadro {
+    border: 1px solid blue;
+    padding: 15px;
+}
+
+.cuadro-2 {
+    border-color: #14bfc6;
+}
+
+.cuadro-3 {
+    border-color: #ffcf40;
+}
+
+.texto-cuadro {
+    text-align: center;
+}
+
+.info{
+    font-size: 13px;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+        /* form */
+.form-nombre-apellido {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.div-correo{
+    padding-bottom: 10px;
+}
+
+.cant-cat {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.container{
+    padding-bottom: 15px;
+}
